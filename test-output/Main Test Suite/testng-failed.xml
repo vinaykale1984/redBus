@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Main Test Suite]">
+  <test thread-count="5" verbose="2" name="TestNG Test Group(failed)">
+    <classes>
+      <class name="test.HotelTest">
+        <methods>
+          <include name="Verify_navigating_to_Hotel_result_page"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Verify_searching_of_Hotels_in_Goa"/>
+        </methods>
+      </class> <!-- test.HotelTest -->
+      <class name="test.gmailLogin">
+        <methods>
+          <include name="setup"/>
+          <include name="Verify_tapping_on_next_btn_with_invalid_email"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.gmailLogin -->
+      <class name="test.TogglingTest">
+        <methods>
+          <include name="Verify_sorting_duration_in_ascending_order"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Verify_sorting_departure_in_ascending_order"/>
+          <include name="Verify_sorting_duration_in_descending_order"/>
+          <include name="Verify_sorting_departure_in_descending_order"/>
+        </methods>
+      </class> <!-- test.TogglingTest -->
+    </classes>
+  </test> <!-- TestNG Test Group(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->
