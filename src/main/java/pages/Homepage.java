@@ -134,7 +134,7 @@ public class Homepage extends BasePage {
   	public void BookLeastPriceBus() throws ParseException, InterruptedException {
   		ListAllElements(BusName, Agent, TicketPrice);
   		Assert.assertEquals(readText(By.xpath(viewSeatActual)), viewSeatExpected);
-  		Assert.assertEquals(readText(By.xpath(viewSeatActual)), viewSeatExpected);
+  		
   	}
   	
   	}	
